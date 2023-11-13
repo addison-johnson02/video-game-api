@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "The Force Unleashed",
+    "genre": "sci-fi",
+    "type": "fighter",
+    "cover_art": "https://static.wikia.nocookie.net/starwars/images/b/b6/TFU_novel_new_cover.jpg/revision/latest?cb=20080418182359"
+  },
+  {
+    "id": 2,
+     "title": "NASCAR 07",
+    "genre": "sports",
+    "type": "racing simulation",
+    "cover_art": "https://upload.wikimedia.org/wikipedia/en/b/b4/Nascar07ps2scan.jpg"
+  },
+  {
+    "id": 3,
+     "title": "NASCAR 06",
+    "genre": "sports",
+    "type": "racing simulation",
+    "cover_art": "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Nascar06ps2scan.jpg/220px-Nascar06ps2scan.jpg"
+  }
+]
