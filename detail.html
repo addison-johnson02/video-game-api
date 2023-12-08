@@ -10,8 +10,17 @@
 
   <script>
 console.log('Javascript has started!');
-    
-    
+    const query_parameters = new URLSearchParams(window.location.search)
+    const video_game_id = query_parameters.get('video_game_id');
+
+    console.log("This is our video game ID");
+    console.log(video_game_id);
+    fetch(`https://addison.johnson02.github.io/video-game-api/video-games/${video_game_id}.json`)
+    .then(result => result.json())
+    .then(game => {
+
+      console.log('We have a game?');
+    console.log(game);
   </script>
 
   </body>
