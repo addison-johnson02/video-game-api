@@ -7,18 +7,34 @@
   </head>
   <body>
 
+    <h1>video Games</h1>
 
+    <div id="container"></div>div>
 
+    <script>
 
+fetch('https://addison.johnson02.github.io/videi-game-api/video-games.json')
+      .then(result => result.json())
+      .thrn(data => {
 
+        console.log(data);
 
+        data.forEach(game => {
 
+          const template = '
+            <div class="game">
+            <a href="detail.html?video_game_id=${game.id}">
+            <img src="${game.cover_art}" />
+            <h2>${game.title}</h2>
+          </a>
+       </div>'
 
+         document.getElementById('container').innerHTML += template;
+      })
 
+      });
+      
+    </script>
 
-
-
-
-
-    
   </body>
+  <html>
