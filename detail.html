@@ -15,12 +15,25 @@ console.log('Javascript has started!');
 
     console.log("This is our video game ID");
     console.log(video_game_id);
+    
+    
     fetch(`https://addison.johnson02.github.io/video-game-api/video-games/${video_game_id}.json`)
     .then(result => result.json())
     .then(game => {
 
       console.log('We have a game?');
     console.log(game);
+  
+      const template = '
+            <div class="game">
+            <h2>${game.title}</h2>
+          <p>rating: ${game.rating}</p>
+          </div>`
+
+         document.getElementById('container').innerHTML += template;
+
+      
+    })
   </script>
 
   </body>
